@@ -1,0 +1,21 @@
+theme: just-the-docs
+title: AI Wiki
+description: A self-hosted encyclopedia of neural networks, machine learning and artificial intelligence for engineers and self-hosters.
+color_scheme: light
+nav_sort: case_insensitive
+back_to_top: true
+last_edit_timestamp: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+just_the_docs:
+  navigation_depth: 4
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links

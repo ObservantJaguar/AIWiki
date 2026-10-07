@@ -1,0 +1,7 @@
+docs/_site/
+.bundle/
+Gemfile.lock
+vendor/
+
+# Local project instructions, not for public repo
+/wiki-prompts/
