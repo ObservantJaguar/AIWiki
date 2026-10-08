@@ -10,7 +10,7 @@ nav_order: 7
 
 **Goal:** get AI code completion and chat working inside your editor, using a local model — then decide when a cloud coder (Copilot/Cursor) is the better tool.
 
-This is fully self-hosted: Continue in VS Code (or JetBrains) talking to a local Ollama model. Privacy-aware, no subscription, works offline.
+This is fully self-hosted: Continue in VS Code (or JetBrains) talking to a local model via Ollama *or* LM Studio. Privacy-aware, no subscription, works offline. For a complete step-by-step guide with hardware requirements, see the [local VS Code guide](/guides/guide-local-vscode.html).
 
 ## Decision: local coder vs cloud coder
 
@@ -22,6 +22,18 @@ This is fully self-hosted: Continue in VS Code (or JetBrains) talking to a local
 | Works offline | Yes | No |
 
 Start local to keep your code private and learn the mechanics; switch to cloud for the strongest completions.
+
+## Step 0 — Check your hardware first
+
+A coding model must fit in RAM/VRAM to be usable. Rough guide for Q4-quantized models:
+
+| Your RAM/VRAM | Models that fit | Result |
+|---|---|---|
+| 8-16 GB | 1B-7B | Light autocomplete |
+| 32 GB | 7B-14B | Comfortable coding assistant |
+| 64 GB+ | 14B-32B+ | Strong local models |
+
+For a detailed estimate (including why a CPU-only 32 GB box struggles with big models), read the [local VS Code guide](/guides/guide-local-vscode.html#hardware-requirements--read-this-first).
 
 ## Step 1 — Install VS Code and Continue
 
@@ -58,6 +70,12 @@ ollama pull qwen2.5-coder:3b
 ```
 
 Then switch the Continue model to `qwen2.5-coder:3b` for snappier responses.
+
+## Step 5b — Prefer a GUI? Use LM Studio instead of Ollama
+
+If you don't want the terminal, **LM Studio** does the same job with a graphical interface: download a Qwen2.5 Coder (Q4_K_M) model, start its local server, and Connect Continue to `http://localhost:1234/v1`. Full steps are in the [local VS Code guide](/guides/guide-local-vscode.html#option-b--lm-studio-graphical).
+
+Both engines expose an OpenAI-compatible server; the only thing that changes in Continue is the provider and URL.
 
 ## Step 6 — Consider a cloud coder
 

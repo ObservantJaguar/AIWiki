@@ -11,6 +11,7 @@ has_children: true
 Hands-on, step-by-step guides for running and serving models on hardware you control.
 
 - [Run an LLM locally with Ollama](guide-ollama.html)
+- [Run a local model in VS Code](guide-local-vscode.html)
 - [Serve a model with vLLM (OpenAI-compatible API)](guide-vllm.html)
 - [Build a RAG application](guide-rag.html)
 - [Fine-tune a model with LoRA](guide-lora.html)
