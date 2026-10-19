@@ -20,5 +20,6 @@ An encyclopedia of open-source and self-hostable software for working with neura
 | multimodal        - Stable Diffusion, ComfyUI, Whisper, Bark  |
 | agent-frameworks  - LangChain, LlamaIndex, CrewAI, AutoGen    |
 | observability     - MLflow, W&B, experiments, metrics         |
+| by-country        - Russian AI services and models            |
 +---------------------------------------------------------------+
 ```

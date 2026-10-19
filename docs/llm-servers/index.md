@@ -16,3 +16,5 @@ Software that exposes language models as a service — usually with an OpenAI-co
 - [LocalAI](localai.html) — self-hosted OpenAI-compatible server without dedicated GPU.
 - [LM Studio](lm-studio.html) — a desktop GUI for running models locally.
 - [llama-server](llama-server.html) — the OpenAI-compatible server built into llama.cpp.
+
+Foreign/regional and hosted models and services are covered under [Russian AI services and models](russian-ai.html) and the [model comparison table](/theory/model-families/model-comparison.html).
